@@ -278,9 +278,9 @@ Contributions welcome! Please:
 ## 📧 Contact
 
 For questions or feedback:
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your Name](https://linkedin.com/in/yourprofile)
-- Email: your.email@example.com
+- GitHub: matasudr1
+- LinkedIn: Matas Udrėnas
+- Email: matas.udrenas@gmail.com
 
 ## 📄 License
 
