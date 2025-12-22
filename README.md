@@ -8,7 +8,7 @@ A production-ready, end-to-end data pipeline for stock market analytics leveragi
 ![PostgreSQL](https://img.shields.io/badge/postgresql-15-blue)
 ![Docker](https://img.shields.io/badge/docker-compose-blue)
 
-## 🎯 Project Overview
+## Project Overview
 
 This pipeline extracts stock market data, calculates sophisticated technical indicators, and provides actionable investment insights through an interactive dashboard.
 
@@ -20,7 +20,7 @@ This pipeline extracts stock market data, calculates sophisticated technical ind
 - **Data Quality**: Comprehensive validation and testing with dbt
 - **Interactive Dashboard**: Real-time Streamlit visualization with 4 analytical views
 
-## 🏗️ Architecture
+## Architecture
 <img width="3712" height="1152" alt="Gemini_Generated_Image_m3kyokm3kyokm3ky" src="https://github.com/user-attachments/assets/0f5c17cf-6741-44be-b8b9-3e5ff581587a" />
 
 ### Tech Stack
@@ -34,7 +34,7 @@ This pipeline extracts stock market data, calculates sophisticated technical ind
 | **Visualization** | Streamlit, Plotly | Interactive analytics dashboard |
 | **Containerization** | Docker, Docker Compose | Service orchestration |
 
-## 📊 Data Pipeline
+## Data Pipeline
 
 ### 1. Extract (Ingestion Service)
 - Fetches OHLCV data for configurable stock tickers
@@ -75,7 +75,7 @@ This pipeline extracts stock market data, calculates sophisticated technical ind
 - Streamlit dashboard with 4 analytical views
 - Real-time data refresh
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -185,7 +185,7 @@ make shell-db       # Access PostgreSQL CLI
 make backup-db      # Backup database
 ```
 
-## ☁️ Future Enhancements
+## Future Enhancements
 
 - CI/CD pipeline with GitHub Actions
 - Cloud deployment (AWS/Railway)
@@ -193,7 +193,7 @@ make backup-db      # Backup database
 - Real-time streaming data
 - More stock tickers and sectors
 
-## 📊 Sample Data
+## Sample Data
 
 The pipeline includes 10 pre-configured stocks:
 - **Tech**: AAPL, MSFT, GOOGL, AMZN, TSLA, NVDA, META
@@ -202,7 +202,7 @@ The pipeline includes 10 pre-configured stocks:
 
 Easily add more tickers by updating the `stock_metadata` table.
 
-## 🎓 Skills Demonstrated
+## Skills Demonstrated
 
 ✅ **ETL Pipeline Design**: Production-ready data extraction, transformation, and loading  
 ✅ **Workflow Orchestration**: Airflow DAG development with error handling  
@@ -214,25 +214,25 @@ Easily add more tickers by updating the `stock_metadata` table.
 ✅ **API Integration**: Alpha Vantage API with rate limiting  
 ✅ **Finance Domain**: Stock market analytics and portfolio management  
 
-## 🔐 Security Notes
+## Security Notes
 
 - Store your Alpha Vantage API key in `.env` (not in code)
 - Change default database passwords in `.env` for production
 - The `.env` file is gitignored and won't be committed
 - Alpha Vantage free tier: 5 calls/min, 500 calls/day
 - 
-## 📧 Contact
+## Contact
 
 For questions or feedback:
 - GitHub: matasudr1
 - LinkedIn: Matas Udrėnas
 - Email: matas.udrenas@gmail.com
 
-## 📄 License
+## License
 
 MIT License - see [LICENSE](LICENSE) file for details
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - [Alpha Vantage](https://www.alphavantage.co/) for stock market data API
 - [Apache Airflow](https://airflow.apache.org/) for orchestration
@@ -245,7 +245,7 @@ MIT License - see [LICENSE](LICENSE) file for details
 
 Built with ❤️ as a data engineering portfolio project.
 
-## 📝 Project Structure
+## Project Structure
 
 ```
 stock-market-pipeline/
