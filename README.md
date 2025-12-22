@@ -21,19 +21,7 @@ This pipeline extracts stock market data, calculates sophisticated technical ind
 - **Interactive Dashboard**: Real-time Streamlit visualization with 4 analytical views
 
 ## 🏗️ Architecture
-
-```
-┌─────────────┐     ┌──────────────┐     ┌─────────────┐     ┌──────────────┐
-│Alpha Vantage│────▶│   Airflow    │────▶│ PostgreSQL  │────▶│  Streamlit   │
-│     API     │     │ Orchestrator │     │  Database   │     │  Dashboard   │
-└─────────────┘     └──────────────┘     └─────────────┘     └──────────────┘
-                            │                     │
-                            ▼                     │
-                    ┌──────────────┐             │
-                    │     dbt      │◀────────────┘
-                    │ Transformations│
-                    └──────────────┘
-```
+<img width="3712" height="1152" alt="Gemini_Generated_Image_m3kyokm3kyokm3ky" src="https://github.com/user-attachments/assets/0f5c17cf-6741-44be-b8b9-3e5ff581587a" />
 
 ### Tech Stack
 
