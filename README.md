@@ -1,4 +1,4 @@
-# 📈 Stock Market Data Pipeline
+# Stock Market Data Pipeline
 
 A production-ready, end-to-end data pipeline for stock market analytics leveraging financial data from Alpha Vantage API. Built with modern data engineering best practices, this project demonstrates ETL orchestration, data transformation, and interactive visualization.
 
