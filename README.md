@@ -232,6 +232,30 @@ Easily add more tickers by updating the `stock_metadata` table.
 - Change default database passwords in `.env` for production
 - The `.env` file is gitignored and won't be committed
 - Alpha Vantage free tier: 5 calls/min, 500 calls/day
+- 
+## 📧 Contact
+
+For questions or feedback:
+- GitHub: matasudr1
+- LinkedIn: Matas Udrėnas
+- Email: matas.udrenas@gmail.com
+
+## 📄 License
+
+MIT License - see [LICENSE](LICENSE) file for details
+
+## 🙏 Acknowledgments
+
+- [Alpha Vantage](https://www.alphavantage.co/) for stock market data API
+- [Apache Airflow](https://airflow.apache.org/) for orchestration
+- [dbt](https://www.getdbt.com/) for data transformation
+- [Streamlit](https://streamlit.io/) for dashboard framework
+
+---
+
+**⭐ Star this repo if you find it helpful!**
+
+Built with ❤️ as a data engineering portfolio project.
 
 ## 📝 Project Structure
 
@@ -265,26 +289,3 @@ stock-market-pipeline/
 ├── Makefile                   # Helper commands
 └── README.md
 
-## 📧 Contact
-
-For questions or feedback:
-- GitHub: matasudr1
-- LinkedIn: Matas Udrėnas
-- Email: matas.udrenas@gmail.com
-
-## 📄 License
-
-MIT License - see [LICENSE](LICENSE) file for details
-
-## 🙏 Acknowledgments
-
-- [Alpha Vantage](https://www.alphavantage.co/) for stock market data API
-- [Apache Airflow](https://airflow.apache.org/) for orchestration
-- [dbt](https://www.getdbt.com/) for data transformation
-- [Streamlit](https://streamlit.io/) for dashboard framework
-
----
-
-**⭐ Star this repo if you find it helpful!**
-
-Built with ❤️ as a data engineering portfolio project.
