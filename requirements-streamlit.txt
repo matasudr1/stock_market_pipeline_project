@@ -1,0 +1,6 @@
+# Streamlit Dashboard Dependencies Only
+streamlit==1.29.0
+plotly==5.18.0
+pandas==2.1.4
+sqlalchemy>=1.4.28,<2.0
+psycopg2-binary==2.9.9

@@ -1,0 +1,78 @@
+version: 2
+
+sources:
+  - name: stock_market
+    description: Raw stock market data from yfinance
+    database: stock_market
+    schema: public
+    tables:
+      - name: raw_stock_prices
+        description: Raw OHLCV data for stocks
+        columns:
+          - name: id
+            description: Primary key
+            tests:
+              - unique
+              - not_null
+          - name: ticker
+            description: Stock ticker symbol
+            tests:
+              - not_null
+          - name: date
+            description: Trading date
+            tests:
+              - not_null
+          - name: close
+            description: Closing price
+            tests:
+              - not_null
+
+      - name: stock_metadata
+        description: Stock company information
+        columns:
+          - name: ticker
+            description: Stock ticker symbol (primary key)
+            tests:
+              - unique
+              - not_null
+
+models:
+  - name: stg_stock_prices
+    description: Cleaned stock price data with quality checks
+    columns:
+      - name: ticker
+        description: Stock ticker symbol
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_stock_metadata')
+              field: ticker
+      
+      - name: date
+        description: Trading date
+        tests:
+          - not_null
+      
+      - name: close
+        description: Adjusted closing price
+        tests:
+          - not_null
+          - dbt_utils.accepted_range:
+              min_value: 0
+              inclusive: false
+      
+      - name: volume
+        description: Trading volume
+        tests:
+          - dbt_utils.accepted_range:
+              min_value: 0
+              inclusive: true
+
+  - name: stg_stock_metadata
+    description: Active stock metadata and company information
+    columns:
+      - name: ticker
+        description: Stock ticker symbol
+        tests:
+          - unique
+          - not_null

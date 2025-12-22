@@ -1,0 +1,35 @@
+name: 'stock_market_analytics'
+version: '1.0.0'
+config-version: 2
+
+profile: 'stock_market'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  stock_market_analytics:
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table
+
+vars:
+  # Moving average windows
+  short_ma_window: 20  # 20-day moving average
+  long_ma_window: 50   # 50-day moving average
+  
+  # Volatility calculation window
+  volatility_window: 30  # 30-day volatility
+  
+  # RSI calculation window
+  rsi_window: 14
