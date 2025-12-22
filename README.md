@@ -155,7 +155,7 @@ make dbt-test
 - Sharpe ratio analysis
 - Maximum drawdown metrics
 
-## 🧪 Testing
+## Testing
 
 ```bash
 # Run all tests
@@ -168,7 +168,7 @@ make dbt-test
 make dbt-run
 ```
 
-## 📋 Available Commands
+## Available Commands
 
 ```bash
 make help           # Show all available commands
