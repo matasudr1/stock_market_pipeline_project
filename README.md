@@ -241,9 +241,6 @@ MIT License - see [LICENSE](LICENSE) file for details
 
 ---
 
-**⭐ Star this repo if you find it helpful!**
-
-Built with ❤️ as a data engineering portfolio project.
 
 ## Project Structure
 
